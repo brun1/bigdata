@@ -1,12 +1,10 @@
-[![Build Status](https://travis-ci.org/brun1/bigdata.svg?branch=master)](https://travis-ci.org/brun1/bigdata)
-
-# bigdata #
+# Data Reduction Server #
 
 ## Build & Run ##
 
 ```sh
-$ cd bigdata
-$ sbt
+$ cd Data_Reduction_Server
+$ ./sbt
 > container:start
 > browse
 ```

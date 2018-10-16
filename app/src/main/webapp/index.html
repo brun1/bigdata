@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test Page</title>
+    <style>
+
+        .bar {
+          fill: black;
+        }
+
+        .axis .tick text {
+          font: 12pt sans-serif;
+        }
+
+        .axis text {
+          font: 16pt sans-serif;
+        }
+
+        .axis path,
+        .axis line {
+          fill: none;
+          stroke: #000;
+          shape-rendering: crispEdges;
+        }
+
+        .x.axis path {
+          display: none;
+        }
+
+        #container {
+          position: fixed;
+          left: 0px;
+          right: 0px;
+          top: 20px;
+          bottom: 0px;
+        }
+    </style>
+  </head>
+  <body>
+    <select id="nominalColumns">
+        <option value="workclass">Workclass</option>
+        <option value="education">Education</option>
+        <option value="marital-status">Marital Status</option>
+        <option value="occupation">Occupation</option>
+        <option value="relationship">Relationship</option>
+        <option value="race">Race </option>
+        <option value="sex" selected="selected">Sex</option>
+        <option value="native-country">Native Country</option>
+        <option value="income-category">Income Category</option>
+    </select>
+    <div id="container"></div>
+
+    <script data-main="js/main" src="bower_components/requirejs/require.js"></script>
+
+    <script src="js/requireJSConfig.js"></script>
+  </body>
+</html>
