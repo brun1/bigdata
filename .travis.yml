@@ -1,5 +1,10 @@
 language: scala
 
+jdk: oraclejdk8
+
 scala:
-  - 2.3.0
-  - tip
+   - 2.3.4
+   - 2.12.7
+
+script:
+   - sbt ++$TRAVIS_SCALA_VERSION test
